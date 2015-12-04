@@ -51,19 +51,17 @@ body {
  .ever-logo {
     width: 250px;
     height: 250px;
-    border-color: #939393;
     border: 2px solid;
+    border-color: #545454;
     border-radius: 100%;
-    opacity: 0.5;
   }
 
  .logo  {
     width: 250px;
     height: 250px;
-    border-color: #939393;
     border: 2px solid;
+    border-color: #545454;
     border-radius: 100%;
-    opacity: 0.5;
     background-color: white;
   }
 
