@@ -2,8 +2,8 @@
 <head>
 <link rel="stylesheet" type="text/css" href="styles.css"/>	
 </head>
-<body>
-	<div id="container">
+  <body>
+	  <div id="container">
       <div id="header">
       	<h1 align="center">Enrollment page for businesses</h1>
       </div>
@@ -12,27 +12,95 @@
           <!-- place margins on this element -->
           <h2>Step 1: Upload your logo</h2>
           <table align="center">
-        	<tr>
-        		<td>
-        			<img src="./images/logo.png" class="ever-logo" />
-        		</td>
-				<td>
-					<img class="logo"/>
-				</td>
-        		<td align = "justify" class="upload-p" >
-        			
-        				<p class="p-step1"> After Choosing your logo by tapping on the white circle, push the upload button: </p>
-        		
-        			
-        				<a class="btn-upload" href="#"><h2>Upload</h2></a>
-        			
-        		</td>
-        	</tr>
-           </table>
+          	<tr>
+          		<td>
+          			 <img src="./images/logo.png" class="ever-logo" />
+          		</td>
+  				    <td>
+  					     <img class="logo"/>
+  				    </td>
+          		<td align = "justify" class="upload-p" >
+          			
+          				<p class="p-step1"> After Choosing your logo by tapping on the white circle, push the upload button: </p>
+          		
+          			
+          				<a class="btn-upload" href="#"><h2>Upload</h2></a>
+          			
+          		</td>
+          	</tr>
+          </table>
         </div>
       </div>
-      <div id="footer">
-      </div>
+
     </div>
+
+    <!----------------------Enrollment Step 2 & 3 ---------------->
+
+    <div class = "step2and3font">
+      <form action="index.html" method="get" class="step2and3flexbox">
+        
+        <table class="step2box" >
+          <thead>
+            <tr>
+              <th colspan="2">Step 2: Desired enrollment date</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td align="right"><label for="enroldt" align="right">Start Date:</label></td>
+              <td align="left"><input class= "jobinput" type="text" value ="mm/dd/yyyy" id="enroldt"/> 
+            </tr>
+
+            <tr>
+              <td align="right"><label for="enroldt" align="right">End Date:</label></td>
+              <td align="left"><input class= "jobinput" type="text" value ="mm/dd/yyyy" id="enroldt"/> 
+            </tr>
+
+          </tbody>
+
+          <tfoot>
+            <tr>
+              
+            </tr>
+          </tfoot>
+
+        </table>
+      
+        <table class="step3box">
+
+          <thead>
+            <tr>
+              <th colspan="2">Step 3: Details about the agent</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          
+            <tr>
+              <td align="right"><label for="name">Name:</label></td>
+              <td align="left"><input class= "jobinput" type="text" value="ABCD EFGH" id="name" name="co_name"></td>
+            </tr>
+            <tr>
+              <td align="right"><label for="location">Location:</label></td>
+              <td colspan="3"><input class= "jobinput" type="text" value="Los Angeles" id="location" name="ag_loc"></td>  
+            </tr>
+
+          </tbody>
+
+          <tfoot>
+            <tr>
+            </tr>
+          </tfoot>
+
+        </table>
+      
+      </form>
+    </div>
+
+    <div id="footer">
+    </div>
+    
 </body>
 </html>
