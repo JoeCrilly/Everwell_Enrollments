@@ -12,19 +12,27 @@
 <!-- Pre-regidter section-->
 </head>
   <body>
-  
-  <!---------------------------- Header ------------------------>
-  <div class="header">  
-      <h1 align="center">Enrollment page for businesses</h1>
-  </div>
-  <!---------------------- Enrollment Step 1 -------------------->
-  <div class="step1">
-    <h2 align="center">Agent's uploaded logo:</h2>
-    <div class="flexbox-parent">
-      <div class="flexbox-item"><img src="./images/logo.png" class="ever-logo" /></div>
-      <div class="flexbox-item"><img class="logo"/></div>
+	  <div id="container">
+      <div id="header">
+      	<h1 align="center">Enrollment page for businesses</h1>
+      </div>
+      <div id="content">
+        <div class="step1">
+          <h2 align="center">Step 1: Agent's uploaded logo:</h2>
+          <table align="center">
+          	<tr>
+          		<td>
+          			 <img src="./images/logo.png" class="ever-logo" />
+          		</td>
+  				    <td>
+  					     <img class="logo"/>
+  				    </td>
+          	</tr>
+          </table>
+        </div>
+      </div>
+
     </div>
-  </div>
 
     <!----------------------Enrollment Step 2 & 3 ---------------->
 
@@ -34,7 +42,7 @@
         <table class="step2box" >
           <thead>
             <tr>
-              <th colspan="2">Desired Enrollment dates</th>
+              <th colspan="2">Step 2: Desired enrollment date</th>
 
             </tr>
           </thead>
@@ -64,7 +72,7 @@
 
           <thead>
             <tr>
-              <th colspan="2">Contact details of Agent</th>
+              <th colspan="2">Step 3: Details about the agent</th>
             </tr>
           </thead>
 
@@ -317,8 +325,10 @@
 
           <tr>
           <div class="myform">
-              <form action="">
-                  <input type="checkbox" name="register" value="" class ="myform">By checking this box you agree to the terms and conditions of Everwell company.<br>
+              <form action=" ">
+
+                <input type="checkbox" name="register" value="submit" class ="myform">By checking this box you agree to the terms and conditions of Everwell company.<br>
+
               </form>
           </div>
          </tr>
@@ -331,7 +341,9 @@
 
                				<p> You are leaving this page</p>
 
-               				</div>
+                      <input type=button onClick="location.href='https://www.google.com/?gws_rd=ssl/'" value='Confirm'> </br>
+
+                      </div>
 
 
 
@@ -352,10 +364,22 @@
     <h3>
         This text is styled with some of the text formatting properties.<br>
         The heading uses the text-align, text-transform, and color properties.
-    </h3>
 
-    
-    </div>
+
+
+    <!--footer images--->
+
+        <a href="default.asp">
+          <img src="./images/contact-us-fb.png" onmouseover="this.src ='images/facebookcolor.png'" onMouseOut="this.src='images/contact-us-fb.png'" style="width:25px;height:25px;border:0;margin-left:30%">
+        </a>
+
+        <a href="default.asp">
+           <img src="./images/contact-us-twitter.png" onMouseOver="this.src='images/TwitterHoverImage.png'" onMouseOut="this.src='images/contact-us-twitter.png'" style="width:25px;height:25px;border:0">
+        </a>
+
+
+      </h3>
+</div>
 
 
 </body>
