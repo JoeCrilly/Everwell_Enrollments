@@ -256,9 +256,9 @@ footer {
 
 .footerContain {
 	width: 75%;
-	height: 300px;
+	height: 325px;
 	margin: auto;
-	padding-top: 25px;
+	padding-top: 30px;
 	background-color: #0093e0;
 }
 
@@ -277,7 +277,7 @@ table {
 }
 
 th {
-	font-size: 20px;
+	font-size: 120%;
 }
 
 td {
@@ -285,14 +285,18 @@ td {
 }
 
 td > p {
-	font-size: 20px;
+	font-size: 100%;
 }
 
-/* fix spacing between h1 and td after fixing the inputs */
+/* !!fix spacing between th and td after fixing the inputs!! */
+
+/* COLUMN 1 */
 
 .column1 {
 	width: 30%;
 }
+
+/* COLUMN 2 */
 
 .column2 {
 	width: 50%;
@@ -310,13 +314,13 @@ form > p {
 }
 
 input {
-	width: 60%;
+	width: 65%;
 	height: 18px;
 	border: 1px solid white;
 }
 
 textarea {
-	width: 60%;
+	width: 65%;
 	height: 100px;
 	resize: none;
 }
@@ -324,22 +328,67 @@ textarea {
 input[name = "btnsubmit"] {
 	height: 25px;
 	font-family: "Century Gothic";
-	font-size: 1em;
+	font-size: 100%;
 	color: white;
 	background-color: #79a8e0;
 	border: 1px solid white;
 }
 
+.mobCol {
+	display: none;
+}
+
+/* COLUMN 3 */
+
 .column3 {
 	width: 20%;
 }
 
-.image1, .image2, .image3 {
+.column3 img {
 	width: 65px;
 	height: 65px;
 	/** spacing between widgets **/
 	margin-top: 5px;
 	margin-right: auto;
 	margin-left: auto;
-	border: 1px solid white;
+}
+
+/*** MEDIA QUERY BEGINS ***/
+@media(max-width: 1080px) {
+ .footerContain {
+	padding-top: 25px;
+ }
+}
+
+@media(max-width: 800px) {
+ /* COLUMN 1 */
+ .column1 {
+	display: none;
+ }
+
+ .column2 {
+	border: none;
+ }
+
+ .column3 {
+	display: none;
+ }
+
+/* COLUMN 3 */
+ .mobCol {
+	height: 100px;
+	padding-top: 10px;
+
+	display: block;
+ }
+
+ .mobCol > div {
+	width: 65%;
+	margin: auto;
+ }
+ 
+}
+
+@media(max-width: 515px) {
+
 }
