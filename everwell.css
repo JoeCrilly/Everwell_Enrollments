@@ -502,11 +502,7 @@ input[name = "btnsubmit"] {
 }
 
 /*** MEDIA QUERY BEGINS ***/
-@media(max-width: 1080px) {
- .footerContain {
-	padding-top: 25px;
- }
-}
+/** BROWSER **/
 
 @media(max-width: 800px) {
 /* FOOTERCONTAINTER*/
@@ -515,7 +511,7 @@ input[name = "btnsubmit"] {
 	padding-top: 25px;
  }
 
- /* COLUMN 1 */
+ /* COLUMNS */
  .column1 {
 	display: none;
  }
@@ -547,4 +543,42 @@ input[name = "btnsubmit"] {
 /* COLUMN 3 */
  .mobCol img {
 	width: 20%;
+ }
 }
+
+/*** MOBILE ***/
+@media only screen and (max-device-width: 750px) {
+.footerContain {
+	width: 100%;
+ }
+
+ /* COLUMNS */
+ .column1 {
+	display: none;
+ }
+
+ .column2 {
+	border: none;
+ }
+
+ .column3 {
+	display: none;
+ }
+
+/* COLUMN 3 */
+ .mobCol {
+	height: 125px;
+
+	display: block;
+ }
+
+ .mobCol > div {
+	width: 50%;
+	margin: auto;
+ }
+
+ .mobCol img {
+	width: 15%;
+ }
+}
+
