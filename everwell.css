@@ -513,5 +513,11 @@ input[name = "btnsubmit"] {
 }
 
 @media(max-width: 515px) {
+/* COLUMN 3 */
+.mobCol {
+	padding-top: 20px;
+ }
 
+ .mobCol img {
+	width: 30%;
 }
