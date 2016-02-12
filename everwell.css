@@ -9,6 +9,7 @@ body {
     height: 100%;
 	  margin: 0px;
     background-color: white;
+    min-width: 500px;
 }
 
 
@@ -358,11 +359,17 @@ a p{
 	.service-item {
 		width:200px;}
 
+	.popup_content{
+		top: 15%;
+    	left: 5%;
+    	width: 90%;
+    	height: 70%;
+	}
+
 	@media(min-width:900px){.service-container{width:720px;}}
 
 	.job-column-1{width:230px;}
 
-	@media(min-width:450px){.job-column-2{width:230px;}}
 	@media(min-width:960px){.job-column-3{width:230px;}}
 
 	.job-column-3,.job-column-1,.job-column-2{
@@ -376,8 +383,13 @@ a p{
 		height: 300px;}
 
 	.service-item {
-		width:300px;
-		}
+		width:300px;}
+
+	.popup_content{
+		top: 15%;
+    	left: 5%;
+    	width: 90%;
+    	height: 70%;}
 
 	@media(min-width:640px){.service-container{width:700px;}}
 
