@@ -251,44 +251,49 @@ a p{
 }
 
 .register_div{
-	padding-top: 10px;
-	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: center;
 }
 
-.register_Button{
-	height: 100px;
-	background-color: #01a7e5;
-	moz-border-radius: 15px;
-  	-webkit-border-radius: 15px;
-	color: #fff;
+.registerButton{
+	position: relative;
 	font-size: 25px;
 	font-weight: bold;
 	font-family: "Century Gothic";
+	text-decoration: none;
+	color: #fff;
+	padding: 33px 14% 33px 14%;
+	background-color: #01a7e5;
+	moz-border-radius: 15px;
+  	-webkit-border-radius: 15px;
+  	border: 5px solid;
+	border-color: #01a7e5;
 }
 
-.register_Button:hover{
+.registerButton:hover{
 	background-color: #FFF;
 	color: #01a7e5;
-	border-width: 5px;
+	border: 5px solid;
 	border-color: #01a7e5;
 }
 
 
 @media(min-width:350px){
 	.service-container{width:260px;}
-	.register_Button{width: 76%;margin-left:12%;}}
+	.registerButton{width:76%;}}
 
 @media(min-width:580px){
 	.service-container{width:490px;}
-	.register_Button{width: 70%;margin-left:15%;}}
+	.registerButton{width: 70%;}}
 
 @media(min-width:800px){
 	.service-container{width:720px;}
-	.register_Button{width: 60%;margin-left:20%;}}
+	.registerButton{width: 60%;}}
 
 @media(min-width:1200px){
 	.service-container{width:950px;}
-	.register_Button{width: 50%;margin-left: 25%;}}
+	.registerButton{width: 50%;}}
 
 .popup_content{
     display: none;
