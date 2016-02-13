@@ -26,7 +26,7 @@ html, header, body {
 	float: right;
 	margin-top: -10px;}
 .blue-box{
-	background-color: green;
+	background-color: #01a7e5;
 	height: 100%;
 }
 .guyDiv{
@@ -135,7 +135,7 @@ html, header, body {
 		display: block;}
 	.ever-logo{display: none;}
 	.blue-box{
-		background-color:red;
+		background-color: #01a7e5;
 		position: relative;}
 	.guyDiv{
 		display: block;
