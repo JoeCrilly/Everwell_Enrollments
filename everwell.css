@@ -15,55 +15,55 @@ html, header, body {
 }
 
 /*Header ***************************************/
-.header {
-	margin: auto;
-    margin-top: 100px;
-}
-
-.aflac-logo{
-    height: 50px;
-    position: absolute;  
-}
+#headerWrapper{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 10px;
+	height: 650px;}
+.header{height:100%;}
+.aflac-logo{width: 200px;}
 .ever-logo{
-    height: 60px;
-    position: relative;
-    float: right;
-    bottom: 60px;
-}
-	
-.blue-box {
+	float: right;
+	margin-top: -10px;}
+.blue-box{
+	background-color: green;
 	height: 100%;
-	background-color: #01a7e5;
 }
-
+.guyDiv{
+	width: 35%;
+	top: 20%;
+	position: relative;
+	display: inline-block;}
+.guy{width: 100%;}
+.tableWrap{
+	width: 64%;
+	float: right;
+	height: 100%;
+}
 .acc-dates{
-    position: absolute;
-    bottom: 530px;
-    border-bottom: 3px solid #fff;
-}
-
+	position: relative;
+	float: right;
+	width: 85%;
+	top: 10%;
+	right: 85px;
+	color: #fff;}
 .acc-dates h1 {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 0;
-}
-
+	border-bottom: 2px solid #fff;
+	text-align: center;}
 /*for tabs*/
 .tabsHeader {
-	position: absolute;   
-    top: 187px;
-}
-
-.tabHeader {
-	float: left;
-}
+	position: relative;
+	margin-top: 82px;
+	height: 60%;
+	width: 86%;
+	top: 13%;}
+.tabHeader {float: left;}
 .tabHeader label {
 	background: #01a7e5; 
 	padding: 10px; 
 	margin-left: -1px; 
 	position: relative;
-	left: 1px; 
-}
+	left: 1px; }
 .tabHeader [type=radio] {display: none;}
 .content {
 	position: absolute;
@@ -73,8 +73,7 @@ html, header, body {
 	right: 0;
 	bottom: 0;
 	padding: 20px;
-	border: 1px solid #ccc; 
-}
+	border: 1px solid #ccc; }
 .contentHeader {
 	position: absolute;
 	top: 28px;
@@ -83,131 +82,82 @@ html, header, body {
 	right: 0;
 	bottom: 0;
 	padding: 20px;
-	border: 1px solid #ccc; 
-}
+	border: 1px solid #ccc; }
 [type=radio]:checked ~ label {
 	background: white;
 	border-bottom: 1px solid white;
-	z-index: 2;
-}
+	z-index: 2;}
 [type=radio]:checked ~ label ~ .content {z-index: 1;}
-
 .tabz {border-radius: 10px 10px 0 0;}
-/*end of tabs*/
 
+/*end of tabs*/
 /*/*Desktop Breakpoints*/
-@media screen and (max-width: 579px){
-	header{height: 500px;}
+@media screen and (max-width: 900px) {
+	#headerWrapper{height: 420px;}
+	.aflac-logo{
+		margin: 0 auto;
+		display: block;
+	}
+	.ever-logo{display: none;}
+	.blue-box{background-color: #01a7e5;}
+	.guyDiv {
+		margin: 0 auto;
+		display: block;
+		top: 0;
+		width: 25%;
+	}
+	.tableWrap{
+		width: 100%;
+		height: 50%;
+		position: relative;
+		top: 0px;
+	}
+	.acc-dates {
+		position: static;
+		margin: 0 auto;
+		width: 25%;
+		float: none;
+	}
+	.tabsHeader {
+		width: 62%;
+		margin: 0 auto;
+		top: -10px;
+		height: 80%;
+	}
+}
+/*mobile PORTRAIT & LANDSCAPE*/
+@media(max-device-width: 450px){ 
 	#headerWrapper{
-		height: 100%;
-	}
-	.header {
 		width: 100%;
-		height: 100%;
-		}
-	.aflac-logo {top: 45px;}
-	.guyDiv {
-		width: 50%;
-		position: absolute;
-		top: 137px;
-		left: 132px;
-	}
-	.guy {width: 100%}
-	.acc-dates {
-		width: 30%;
-		position: absolute;
-		left: 200px;
-		top: 290px;
-		border-bottom: none;
-	}
-	.tabsHeader {
-		width: 68%;
-		top: 357px;
-		height: 220px;
-		left: 18%;
-		}
-	}
-@media screen and (min-width: 580px)  and (max-width: 700px){
-	.header {height: 625px;}
-	.aflac-logo{top: 4%;}
-	.guyDiv{
-		width: 50%;
+		height: 700px;}
+	.aflac-logo{
 		margin: 0 auto;
-	}
+		display: block;}
+	.ever-logo{display: none;}
+	.blue-box{
+		background-color:red;
+		position: relative;}
 	.guyDiv{
-		width: 50%;
+		display: block;
 		margin: 0 auto;
+		top: 10px;
+		}
+	.tableWrap{
+		width: 100%;
+		height: 70%;
 	}
-	.guy {width: 100%;}
-	.acc-dates{
-	    position: static;
-	    margin: 0 auto;
-	    width: 40%;
-	}
+	.acc-dates {display: none;}
+	.acc-dates h1 {border-bottom: none;}
 	.tabsHeader {
 		position: relative;
-		margin: 0 auto;
-		top: 5%;
-		left: 0;
-		height: 32%;
-		width: 70%;
-		}
-	}
-@media screen and (min-width: 701px)  and (max-width: 1000px){
-	header {
-		height: 40%;
-		padding: 0 5%;
-	}
-	#headerWrapper {height: 100%;}
-	.header {
-		width: 100%;
-		height: 100%;
-	}
-	.aflac-logo {top: 45px;}
-	.guyDiv {
-		width: 32%;
-		position: absolute;
-		top: 20%;
-	}
-	.guy {width: 100%}
-	.acc-dates {
+		top: 0px;
+		left: 210px;
+		height: 325px;
 		width: 60%;
-		left: 33%;
-		}
-	.tabsHeader {
-		width: 60%;
-		height: 25%;
-		left: 33%;
-		}
-	}
-@media screen and (min-width: 1001px) {
-	header {
-		height: 55%;
-		padding: 0 5%;
-	}
-	#headerWrapper {height: 100%;}
-	.header {
-		width: 80%;
-		height: 100%;
-	}
-	.aflac-logo {top: 45px;}
-	.guyDiv {
-		width: 32%;
-		position: relative;
-		top: 20%;
-	}
-	.guy {width: 100%}
-	.acc-dates {
-		width: 42%;
-		left: 40%;
-		}
-	.tabsHeader {
-		width: 42%;
-		height: 41%;
-		left: 40%;
-		}
-	}*/
+		}}	
+
 /*END OF HEADER *******************************/
+
 
 
 
