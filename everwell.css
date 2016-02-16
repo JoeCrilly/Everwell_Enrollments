@@ -19,7 +19,7 @@ html, header, body {
 	width: 75%;
 	margin: 0 auto;
 	padding-top: 10px;
-	height: 650px;}
+	height: 600px;}
 .header{height:100%;}
 .aflac-logo{width: 200px;}
 .ever-logo{
@@ -38,14 +38,14 @@ html, header, body {
 .tableWrap{
 	width: 64%;
 	float: right;
-	height: 100%;
+	height: 90%;
 }
 .acc-dates{
 	position: relative;
 	float: right;
 	width: 85%;
-	top: 10%;
-	right: 85px;
+	top: 5%;
+	right: 15%;
 	color: #fff;}
 .acc-dates h1 {
 	border-bottom: 2px solid #fff;
@@ -54,12 +54,13 @@ html, header, body {
 .tabsHeader {
 	position: relative;
 	margin-top: 82px;
-	height: 60%;
+	height: 65%;
 	width: 86%;
-	top: 13%;}
+	top: 7%;}
 .tabHeader {float: left;}
 .tabHeader label {
 	background: #01a7e5; 
+	color: #fff;
 	padding: 10px; 
 	margin-left: -1px; 
 	position: relative;
@@ -85,7 +86,9 @@ html, header, body {
 	border: 1px solid #ccc; }
 [type=radio]:checked ~ label {
 	background: white;
-	border-bottom: 1px solid white;
+	color: #01a7e5;
+	font-weight: bold;
+	border-bottom: 2px solid white;
 	z-index: 2;}
 [type=radio]:checked ~ label ~ .content {z-index: 1;}
 .tabz {border-radius: 10px 10px 0 0;}
@@ -93,7 +96,7 @@ html, header, body {
 /*end of tabs*/
 /*/*Desktop Breakpoints*/
 @media screen and (max-width: 900px) {
-	#headerWrapper{height: 420px;}
+	#headerWrapper{height: 710px;}
 	.aflac-logo{
 		margin: 0 auto;
 		display: block;
@@ -104,25 +107,26 @@ html, header, body {
 		margin: 0 auto;
 		display: block;
 		top: 0;
-		width: 25%;
+		width: 50%;
 	}
 	.tableWrap{
 		width: 100%;
-		height: 50%;
+		height: 45%;
 		position: relative;
 		top: 0px;
 	}
 	.acc-dates {
 		position: static;
 		margin: 0 auto;
-		width: 25%;
+		padding-bottom: 20px;
+		width: 50%;
 		float: none;
 	}
 	.tabsHeader {
-		width: 62%;
+		width: 70%;
 		margin: 0 auto;
 		top: -10px;
-		height: 80%;
+		height: 95%;
 	}
 }
 /*mobile PORTRAIT & LANDSCAPE*/
@@ -537,14 +541,8 @@ form > p {
 
 input {
 	width: 65%;
-	height: 18px;
+	height: 25px;
 	border: 1px solid white;
-}
-
-textarea {
-	width: 65%;
-	height: 100px;
-	resize: none;
 }
 
 input[name = "btnsubmit"] {
@@ -554,6 +552,17 @@ input[name = "btnsubmit"] {
 	color: white;
 	background-color: #01a7e5;
 	border: 1px solid white;
+}
+
+input[name = "email"], input[name = "subject"], textarea[name="message"]{
+	color: black;
+	font-size: 80%;
+}
+
+textarea {
+	width: 65%;
+	height: 100px;
+	resize: none;
 }
 
 .mobCol {
@@ -573,6 +582,16 @@ input[name = "btnsubmit"] {
 	margin-top: 5px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+img[name="fbImage"]:hover {
+	content: url('images/facebookcolor.png');
+}
+img[name="twitImage"]:hover {
+	content: url('images/TwitterHoverImage.png');
+}
+img[name="instaImage"]:hover {
+	content: url('images/InstaHover.png');
 }
 
 /*** MEDIA QUERY BEGINS ***/
@@ -605,6 +624,11 @@ input[name = "btnsubmit"] {
 
 	display: block;
  }
+
+ .mobCol img {
+	width: 65px;
+	height: 65px;
+}
 
  .mobCol > div {
 	width: 65%;
@@ -653,6 +677,7 @@ input[name = "btnsubmit"] {
 
  .mobCol img {
 	width: 15%;
+	margin: auto;
  }
 }
 
