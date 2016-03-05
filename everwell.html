@@ -29,16 +29,16 @@
 			<div class="tabsHeader">
 			    <div class="tabHeader">
 			       <input type="radio" id="tab-1" name="tab-group-1" checked>
-			       <label class="tabz" for="tab-1">AGENT</label>
+			       <label class="tabz" for="tab-1">DATES</label>
 			       <div class="content">
-			           AGENT
+			           DATES
 			       </div> 
 			    </div>
 			   <div class="tabHeader">
 			       <input type="radio" id="tab-2" name="tab-group-1">
-			       <label class="tabz" for="tab-2">DATES</label>       
+			       <label class="tabz" for="tab-2">AGENT</label>       
 			       <div class="contentHeader">
-			           DATES
+			           AGENT
 			       </div> 
 			   </div>
 			</div> 
@@ -222,9 +222,13 @@
 
     </div>
 </div>
-<div class="register_div">
-  <a href="https://www.everwellbenefits.com" class="registerButton">REGISTER FOR ENROLLMENT</a>
-
+<div class="register_div" onclick="reg()">
+  <a href="https://www.everwellbenefits.com" class="registerButton" target="blank">REGISTER FOR ENROLLMENT</a>
+  <script>
+    function reg(){
+      alert('You are leaving Everwell Pasadena');
+    }
+  </script>
 </div>
 
 
@@ -238,7 +242,7 @@
 			<tr>
 				<th class = "column1">EVERWELL PASADENA</th>
 				<th class = "column2">CONTACT YOUR AGENT</th>
-				<th class = "column3">FOLLOW</th>
+<!-- 				<th class = "column3">FOLLOW</th> -->
 			</tr>
 			<tr>
 				<td class = "column1">
@@ -254,7 +258,7 @@
 						<p> <input name = "btnsubmit" type = "submit" />
 					</form>
 				</td>
-				<td class = "column3">
+				<!-- <td class = "column3">
 					<div>
             <a href="https://www.facebook.com/Everwell-Pasadena-1548917178752690/?ref=hl" class="facebook_img"><img name="fbImage" src="images/contact-us-fb.png"></a>
 					</div>
@@ -264,10 +268,10 @@
 					<div>
             <a href="https://www.instagram.com/everwellpasadena/" class="instagram_img"><img name="instaImage" src="images/contact-us-instagram.png"></a>
 					</div>
-				</td>
+				</td> -->
 			</tr>
 				<!--- ONLY VISIBLE ON MOBILE -->
-			<tr>
+<!-- 			<tr>
 				<td class = "mobCol">
 					<div>
             <a href="https://www.facebook.com/Everwell-Pasadena-1548917178752690/?ref=hl" class="facebook_img"><img align = "left" name="fbImage" src="images/contact-us-fb.png"></a>
@@ -275,7 +279,7 @@
             <a href="https://www.instagram.com/everwellpasadena/" class="instagram_img"><img name="instaImage" align = "right" src="images/contact-us-instagram.png"></a>
           </div>
 				</td>
-			</tr>
+			</tr> -->
 		</table>
 	</div>
 </footer>

@@ -158,7 +158,17 @@ html, header, body {
 		left: 210px;
 		height: 325px;
 		width: 60%;
-		}}	
+		}
+	[type=radio]: checked ~ label {
+		padding: 20px;
+	}	
+	.tabHeader label {
+		padding: 30px;
+		font-size: 35px;
+		bottom: 40px;
+	}
+	}	
+
 
 /*END OF HEADER *******************************/
 
